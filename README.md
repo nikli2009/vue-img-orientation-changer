@@ -28,7 +28,7 @@ Vue.use(VueImgOrientationChanger)
 
 ##### Usage
 
-###### Apply directive name `v-img-orientation-changer` on your `img` element.
+###### add `v-img-orientation-changer` on your `img` element.
 
 ```
 <img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
