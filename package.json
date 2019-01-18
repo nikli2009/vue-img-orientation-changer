@@ -1,7 +1,7 @@
 {
   "name": "vue-img-orientation-changer",
   "description": "vue-plugin can help you get images with correct orientation",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "author": "nikk.li <wenyan@zeno.group>",
   "license": "MIT",
   "private": false,
@@ -33,6 +33,7 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.0.0"
   }
 }
