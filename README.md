@@ -34,6 +34,14 @@ Vue.use(VueImgOrientationChanger)
 <img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
 ```
 
+` TIPS: attribute [data-orientation] of the img element will be set with value of img's exif orientation. `
+
+```
+// final DOM is like below
+// means this img orientation is 6;
+<img data-orientation="6" src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
+```
+
 ## LICENSE
 
 [MIT](LICENSE)
