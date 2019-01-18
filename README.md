@@ -5,6 +5,7 @@ English | [简体中文](./README-zh_CN.md)
 [![NPM Downloads][downloads-image]][downloads-url]
 
 > A vue directive that fixes your `jpeg`  `jpg`  `tiff` files orientation.
+###### TIPS: This can really help you stay away from neck damages.
 
 ![image](https://user-images.githubusercontent.com/10917606/51384914-b0469b00-1b58-11e9-924b-53c8ae374c2c.png)
 
