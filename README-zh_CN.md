@@ -4,19 +4,19 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 
-> A vue directive that fixes your `jpeg`  `jpg`  `tiff` files orientation.
+> Vue指令(Vue Directive) - 可以自动调整手机设备拍摄的照片的方向 支持 `jpeg`  `jpg`  `tiff`
 
 ![image](https://user-images.githubusercontent.com/10917606/51384914-b0469b00-1b58-11e9-924b-53c8ae374c2c.png)
 
 
-### Installation
+### 安装
 
-##### Via NPM
+##### 通过 NPM
 ```
 npm install vue-img-orientation-changer -S
 ```
 
-##### Import 
+##### 项目中引入 
 ```
 import Vue from 'vue'
 import VueImgOrientationChanger from 'vue-img-orientation-changer'
@@ -24,12 +24,12 @@ import VueImgOrientationChanger from 'vue-img-orientation-changer'
 Vue.use(VueImgOrientationChanger)
 ```
 
-##### Usage
+##### 使用方式
 ```
 <img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
 ```
 
-## LICENSE
+## 协议
 
 [MIT](LICENSE)
 
