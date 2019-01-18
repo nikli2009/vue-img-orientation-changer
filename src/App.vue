@@ -37,7 +37,7 @@
     <div class="img-wrapper">
       <div>
         <h3>Orientation:1 Fixed</h3>
-        <img :src="file" v-img-orientation-changer :alt="alt" @click="changeFile">
+        <img :src="file" v-img-orientation-changer.debug :alt="alt" @click="changeFile">
       </div>
       <div>
         <h3>Orientation:2 Fixed</h3>

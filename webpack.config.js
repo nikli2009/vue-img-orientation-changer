@@ -1,12 +1,25 @@
 var path = require('path')
 var webpack = require('webpack')
 
+const NODE_ENV = process.env.NODE_ENV
+
+const assetsPath = function (_path) {
+  const assetsSubDirectory = process.env.NODE_ENV === 'production'
+    ? 'static'
+    : 'static'
+
+  return path.posix.join(assetsSubDirectory, _path)
+}
+
 module.exports = {
-  entry: './src/main.js',
+  entry: NODE_ENV == 'development' ? './src/main.js' : './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'vue-img-orientation-changer.js',
+    library: 'vue-img-orientation-changer',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [

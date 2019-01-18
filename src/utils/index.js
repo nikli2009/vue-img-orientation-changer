@@ -1,13 +1,14 @@
 import imagesLoaded from 'imagesloaded'
 import EXIF from 'exif-js'
 
-const getEXIFOrientation = (el) => {
+const getEXIFOrientation = (el, debug) => {
   return new Promise((resolve, reject) => {
     try {
       imagesLoaded(el, function () {
         el.exifdata = null;
         EXIF.getData(el, function () {
           const orientation = EXIF.getTag(this, 'Orientation');
+          if(debug) { console.log('getEXIFOrientation', orientation); }
           resolve(orientation)
         });
       })
@@ -17,11 +18,12 @@ const getEXIFOrientation = (el) => {
   })
 };
 
-const toOrientationOne = (el, orientation) => {
+const toOrientationOne = (el, orientation, debug) => {
   let _toTransform = '';
   const cWidth = el.clientWidth;
   const cHeight = el.clientHeight;
   const gapFill = Math.abs((cWidth - cHeight)/2);
+  if(debug) { console.log('toOrientationOne', el, cWidth, cHeight, gapFill); }
   switch (orientation) {
     case 1: {
       break;
