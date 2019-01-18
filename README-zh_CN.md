@@ -27,6 +27,10 @@ Vue.use(VueImgOrientationChanger)
 ```
 
 ##### 使用方式
+
+###### 在`img`元素上 加上 `v-img-orientation-changer`
+
+
 ```
 <img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
 ```
