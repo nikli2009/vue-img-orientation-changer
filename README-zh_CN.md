@@ -5,7 +5,7 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 
 > 一个 `Vue 指令(Directive)`, 可以自动调整手机设备拍摄的照片的`方向` 支持 `jpeg`  `jpg`  `tiff`
-###### TIPS: 减轻扭头看图片的脖子负担.
+###### TIPS: 再也不用歪着头看图了
 
 ![image](https://user-images.githubusercontent.com/10917606/51384914-b0469b00-1b58-11e9-924b-53c8ae374c2c.png)
 
