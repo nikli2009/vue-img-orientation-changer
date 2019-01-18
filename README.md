@@ -3,7 +3,10 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 
-> a vue directive can help you fix your jpeg/jpg/tiff files direction.
+##### A vue directive that fixes your jpeg/jpg/tiff files orientation.
+
+![image](https://user-images.githubusercontent.com/10917606/51384914-b0469b00-1b58-11e9-924b-53c8ae374c2c.png)
+
 
 ### Installation
 
