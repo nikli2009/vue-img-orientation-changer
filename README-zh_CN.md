@@ -35,6 +35,14 @@ Vue.use(VueImgOrientationChanger)
 <img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
 ```
 
+` TIPS: 已经应用指令的图片元素 会有一个属性 [data-orientation]， 这个属性会获得 图片的exif信息中的orientation部分`
+
+```
+// 最终的DOM 结果如下：
+// 代表这个图片的orientation 是 6， 可以参照一下上面的对照图
+<img data-orientation="6" src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
+```
+
 ## 协议
 
 [MIT](LICENSE)
