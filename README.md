@@ -1,18 +1,35 @@
-# vue-img-orientation-changer
+## Vue Img Orientation Changer
 
-> vue-plugin can help you get images with correct orientation
+#### This directive can help you fix your jpeg/jpg/tiff files direction.
 
-## Build Setup
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
 
-``` bash
-# install dependencies
-npm install
+### Installation
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+##### Via NPM
+```
+npm install vue-img-orientation-changer -S
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+##### Import 
+```
+import Vue from 'vue'
+import VueImgOrientationChanger from 'vue-img-orientation-changer'
+
+Vue.use(VueImgOrientationChanger)
+```
+
+##### Usage
+```
+<img v-img-orientation-changer :src="yourImgSource">
+```
+
+## LICENSE
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/vue-img-orientation-changer.svg
+[npm-url]: https://npmjs.org/package/vue-img-orientation-changer
+[downloads-image]: https://img.shields.io/npm/dm/vue-img-orientation-changer.svg
+[downloads-url]: https://npmjs.org/package/vue-img-orientation-changer
