@@ -1,5 +1,5 @@
 ## Vue Img Orientation Changer
-[English](./README.md)简体中文
+[English](./README.md) | 简体中文
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
