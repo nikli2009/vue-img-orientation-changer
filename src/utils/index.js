@@ -24,6 +24,19 @@ const toOrientationOne = (el, orientation, debug) => {
   const cHeight = el.clientHeight;
   const gapFill = Math.abs((cWidth - cHeight)/2);
   if(debug) { console.log('toOrientationOne', el, cWidth, cHeight, gapFill); }
+  // if detect none orientation; reset transform;
+  if(!orientation) {
+    _toTransform = [
+      {
+        key: 'transform',
+        value: ''
+      },
+      {
+        key: 'transform-origin',
+        value: ''
+      }
+    ]
+  }
   switch (orientation) {
     case 1: {
       break;
@@ -123,7 +136,7 @@ const toOrientationOne = (el, orientation, debug) => {
   for(let attr of _toTransform) {
     el.style[attr.key] = attr.value
   }
-  return _toTransform
+  // return _toTransform
 };
 
 export {
