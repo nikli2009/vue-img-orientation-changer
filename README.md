@@ -1,9 +1,9 @@
 ## Vue Img Orientation Changer
 
-This directive can help you fix your jpeg/jpg/tiff files direction.
-
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
+
+> a vue directive can help you fix your jpeg/jpg/tiff files direction.
 
 ### Installation
 
@@ -22,7 +22,7 @@ Vue.use(VueImgOrientationChanger)
 
 ##### Usage
 ```
-<img v-img-orientation-changer :src="yourImgSource">
+<img v-img-orientation-changer src="https://user-images.githubusercontent.com/10917606/51309472-735aa580-1a7f-11e9-8081-67ced9a3f536.jpeg">
 ```
 
 ## LICENSE
