@@ -20,10 +20,12 @@ const getEXIFOrientation = (el, debug) => {
 
 const toOrientationOne = (el, orientation, debug) => {
   let _toTransform = '';
-  const cWidth = el.getBoundingClientRect().width;
-  const cHeight = el.getBoundingClientRect().height;
+  // don't have consider IE 8 since Vue.js need IE 9+ version;
+  const _domRect = el.getBoundingClientRect;
+  const cWidth = _domRect.width;
+  const cHeight = _domRect.height;
   const gapFill = Math.abs((cWidth - cHeight)/2);
-  if(debug) { console.log('toOrientationOne', el, cWidth, cHeight, gapFill); }
+  if(debug) { console.log('toOrientationOne', el, _domRect); }
   // if detect none orientation; reset transform;
 
   _markElementOrientation(el, orientation);
@@ -157,8 +159,8 @@ const toOrientationOne = (el, orientation, debug) => {
   @ mark data-orientation
  */
 const _markElementOrientation = (el, orientation) => {
-  let toMark = orientation || 0;
-  el.setAttribute('data-orientation', toMark)
+  let _orientationMark = orientation || 0;
+  el.setAttribute('data-orientation', _orientationMark)
 };
 
 export {

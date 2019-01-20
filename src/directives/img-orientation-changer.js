@@ -27,5 +27,7 @@ const _handleOrientation = (el, debug) => {
   }
   getEXIFOrientation(el, debug).then((orientation) => {
     toOrientationOne(el, orientation, debug);
+  }).catch(e => {
+    console.warn('WARNING: img failed to load', el, e);
   });
 };
