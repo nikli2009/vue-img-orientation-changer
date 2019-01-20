@@ -20,8 +20,8 @@ const getEXIFOrientation = (el, debug) => {
 
 const toOrientationOne = (el, orientation, debug) => {
   let _toTransform = '';
-  const cWidth = el.clientWidth;
-  const cHeight = el.clientHeight;
+  const cWidth = el.getBoundingClientRect().width;
+  const cHeight = el.getBoundingClientRect().height;
   const gapFill = Math.abs((cWidth - cHeight)/2);
   if(debug) { console.log('toOrientationOne', el, cWidth, cHeight, gapFill); }
   // if detect none orientation; reset transform;

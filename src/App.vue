@@ -41,31 +41,31 @@
       </div>
       <div>
         <h3>Orientation:2 Fixed</h3>
-        <img src="/static/f2t.jpg" v-img-orientation-changer alt="" @click="changeAlt">
+        <img src="/static/f2t.jpg" v-img-orientation-changer.debug alt="" @click="changeAlt">
       </div>
       <div>
         <h3>Orientation:3 Fixed</h3>
-        <img src="/static/f3t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f3t.jpg" v-img-orientation-changer.debug alt="">
       </div>
       <div>
         <h3>Orientation:4 Fixed</h3>
-        <img src="/static/f4t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f4t.jpg" v-img-orientation-changer.debug alt="">
       </div>
       <div>
         <h3>Orientation:5 Fixed</h3>
-        <img src="/static/f5t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f5t.jpg" v-img-orientation-changer.debug alt="">
       </div>
       <div>
         <h3>Orientation:6 Fixed</h3>
-        <img src="/static/f6t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f6t.jpg" v-img-orientation-changer.debug alt="">
       </div>
       <div>
         <h3>Orientation:7 Fixed</h3>
-        <img src="/static/f7t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f7t.jpg" v-img-orientation-changer.debug alt="">
       </div>
       <div>
         <h3>Orientation:8 Fixed</h3>
-        <img src="/static/f8t.jpg" v-img-orientation-changer alt="">
+        <img src="/static/f8t.jpg" v-img-orientation-changer.debug alt="">
       </div>
     </div>
   </div>

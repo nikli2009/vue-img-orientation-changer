@@ -5,9 +5,18 @@ export default {
     const { debug } = modifiers;
     _handleOrientation(el, debug)
   },
-  update: function(el,  { modifiers = { debug: false } }) {
+  update: function(el,  { modifiers = { debug: false }}, vnode, oldVnode) {
     const { debug } = modifiers;
-    _handleOrientation(el, debug)
+
+    const { data: { attrs : { src : oldSrc }} } = oldVnode;
+    const { data: { attrs : { src : newSrc }} } = vnode;
+
+    // if src changes => we need to update to reset transform property.
+    // otherwise, we don't have to care about the image changes.
+    if(oldSrc !== newSrc) {
+      if(debug) { console.log('_onUpdate', oldSrc, '=>',  newSrc); }
+      _handleOrientation(el, debug)
+    }
   }
 }
 
