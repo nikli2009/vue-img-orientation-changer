@@ -21,7 +21,7 @@ const getEXIFOrientation = (el, debug) => {
 const toOrientationOne = (el, orientation, debug) => {
   let _toTransform = '';
   // don't have consider IE 8 since Vue.js need IE 9+ version;
-  const _domRect = el.getBoundingClientRect;
+  const _domRect = el.getBoundingClientRect();
   const cWidth = _domRect.width;
   const cHeight = _domRect.height;
   const gapFill = Math.abs((cWidth - cHeight)/2);
